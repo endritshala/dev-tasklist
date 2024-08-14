@@ -4,21 +4,21 @@ services:
   mysql:
     image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_ROOT_PASSWORD: Endrit.3009
       MYSQL_DATABASE: my_database
       MYSQL_USER: my_user
       MYSQL_PASSWORD: my_password
     ports:
       - "3306:3306"
     volumes:
-        - ./backend/scripts:/docker-entrypoint-initdb.d
+      - ./backend/scripts:/docker-entrypoint-initdb.d
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306
-      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_ROOT_PASSWORD: Endrit.3009
     ports:
       - "8080:80"
     depends_on:
@@ -32,7 +32,8 @@ services:
     volumes:
       - ./frontend:/usr/src/app
     depends_on:
-      - mysql
+      - backend  # Ensure the backend starts before the frontend
+
   backend:
     build:
       context: ./backend
