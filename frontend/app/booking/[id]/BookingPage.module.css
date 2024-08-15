@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 30px;
+    margin: 28px;
     color: #333;
 }
 
 /* Title Styling */
 .title {
     font-size: 3.2rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #1a73e8;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
@@ -20,13 +20,13 @@
 /* Booking Info Card Styling */
 .bookingInfo {
     background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
-    padding: 40px;
+    padding: 35px;
     border-radius: 20px;
     border: 2px solid #1a73e8;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 700px;
-    margin-bottom: 50px;
+    max-width: 650px;
+    margin-bottom: 30px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -37,8 +37,8 @@
 
 /* Paragraph Styling */
 .bookingInfo p {
-    margin: 20px 0;
-    font-size: 1.6rem;
+    margin: 17px 0;
+    font-size: 1.5rem;
     line-height: 1.8;
     color: #555;
 }
@@ -50,7 +50,7 @@
 /* Back Link Styled as a Button */
 .backLink {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 13px 28px;
     background-color: #1a73e8;
     color: #ffffff;
     border-radius: 10px;

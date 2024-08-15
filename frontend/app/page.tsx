@@ -72,7 +72,7 @@ const Home: React.FC = () => {
         ))}
       </ul>
       <div className="mt-8 flex justify-center">
-        <Link href="/create" className="bg-blue-600 text-white py-3 px-6 rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-blue-700">
+        <Link href="/create" className="bg-blue-600 text-white py-3 px-6 rounded-full shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-blue-700 ">
           Create New Booking
         </Link>
       </div>

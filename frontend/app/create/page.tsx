@@ -55,13 +55,13 @@ const CreateBooking: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-3xl mx-auto bg-gradient-to-br from-blue-300 via-blue-200 to-white rounded-2xl shadow-xl">
+    <div className="p-6 max-w-2xl mx-auto bg-gradient-to-br from-blue-300 via-blue-200 to-white rounded-2xl shadow-xl">
       <div className="bg-white p-6 rounded-xl shadow-md transition-transform transform hover:shadow-xl">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Create Your Booking</h1>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form onSubmit={handleSubmit} className="space-y-4">
-          {['date', 'doctor_name', 'service', 'start_time', 'end_time'].map((field) => (
-            <div key={field} className="relative p-3 border border-blue-300 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+          {['doctor_name', 'service', 'date', 'start_time', 'end_time'].map((field) => (
+            <div key={field} className="relative p-2 border border-blue-300 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
               <label htmlFor={field} className="block text-base font-medium text-gray-700 mb-1 capitalize">
                 {field.replace('_', ' ')}
               </label>

@@ -17,9 +17,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Ensure the main content takes up at least the full height of the viewport */
-.main-content {
-  min-height: 100vh;
+.content {
+  padding-top: 64px;
 }
 
 :root {
